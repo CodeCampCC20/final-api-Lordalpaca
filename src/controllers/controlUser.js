@@ -12,10 +12,8 @@ userController.getUsers = async (req, res, next) => {
       },
     });
     console.log("user", user);
-    console.log("4444444444444444");
     res.json(user);
   } catch (error) {
-    console.log("5555555555555555");
     next(error);
   }
 };

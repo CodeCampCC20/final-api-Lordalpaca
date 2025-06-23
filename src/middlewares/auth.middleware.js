@@ -22,6 +22,7 @@ export const authCheck = (req, res, next) => {
         createError(401, "Token is invalid!");
       }
       req.user = decode;
+      req.doctor = decode;
       next();
     });
   } catch (error) {

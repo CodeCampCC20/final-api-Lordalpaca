@@ -7,6 +7,7 @@ import { errorMiddleware } from "./src/middlewares/errorMiddleware.js";
 import { userLogin, userRegister } from "./src/controllers/authUser.js";
 import { doctorLogin, doctorRegister } from "./src/controllers/authDoctor.js";
 import userRouter from "./src/routes/user.route.js";
+import doctorRouter from "./src/routes/doctor.route.js";
 
 const app = express();
 
@@ -23,6 +24,9 @@ app.use("/auth/login/doctor", doctorLogin);
 
 //USER MANAGE
 app.use("/users", userRouter)
+
+//DOCTOR MANAGE
+app.use("/doctors", doctorRouter)
 
 app.use(errorMiddleware);
 app.use(forbiddenMiddleware);

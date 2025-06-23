@@ -48,3 +48,5 @@ Prisma Schema 20 Marks
    Authorization: Bearer <token>
    ```
 2. Error responses จะมี HTTP status code ที่เหมาะสม
+
+My note: push by 'git add .' >> 'git commit -m "some comments" ' >> 'git push'
